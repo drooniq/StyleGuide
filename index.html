@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waara.net @ CSS StyleGuide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <img width="75" src="images/waara_net.png" alt="Waara.net">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#headings">Headings</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#panels">Panels</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#indicator">Indicator</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <img class="lang" src="images/c_sharp.png" alt="logo">
+            <img class="lang" src="images/css.png" alt="logo">
+            <img class="lang" src="images/html.png" alt="logo">
+            <img class="lang" src="images/js.png" alt="logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="panel neutraldarker">
+            <h4>Design concept</h4>
+            <p>
+                The design concept of this style guide is to use a purple theme website.<br>
+                Using a clean and spacious approach. Also tried to use rem sizes where applicable<br>
+                so the design will look better.<br>
+                <br>
+                To setup a <a href="#panels">Panel</a> use, a div with class="panel" and if you want specific color
+                scheme<br>
+                add the following classes: positive, negative, neutral, function, neutraldarker<br>
+                <br>
+                Same approach with creating a <a href="#messages">Message</a>, use a div with class="msg" and if you
+                want<br>
+                specific color scheme add the following classes: error, warning, or from panel color scheme.<br>
+                <br>
+                <a href="#buttons">Buttons</a> follows same design, choose class="btn" and if you want specific color
+                scheme<br>
+                add color scheme you want.
+            </p>
+        </div>
+
+        
+        <div id="headings" class="panel neutral">
+            <h4>Headings</h4>
+            <p>This just shows how the different headings looks like.</p>
+            <div>
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+            </div>
+        </div>
+
+
+        <div id="buttons" class="panel neutral">
+            <h4>Buttons</h4>
+            <p>This shows the most common buttons. You can alter the class definition to panek + color scheme you like.
+                <br>Default is positive, negative, neutral and function.
+            </p>
+            <button class="btn positive">Save Document</button>
+            <button class="btn negative">Discard Document</button>
+            <button class="btn neutraldarker">Ordinary Button</button>
+            <button class="btn function">Print Document</button>
+        </div>
+
+
+        <div id="panels" class="panel neutral">
+            <h4>Panels</h4>
+            <p>This shows the different panels. You can alter the class definition to panek + color scheme you like.
+                <br>Default is positive, negative, neutral and function.
+            </p>
+            <div class="panel neutral">
+                <h4>Neutral Panel</h4>
+                <p>This is the view of a neutral panel. Use it to just display some information
+                    <br>div class="panel neutral"
+                </p>
+            </div>
+            <div class="panel positive">
+                <h4>Positive Panel</h4>
+                <p>This is the view of a positive panel. Use it when wanting to provide a positive feedback/information
+                    <br>div class="panel positive"
+                </p>
+            </div>
+            <div class="panel negative">
+                <h4>Negative Panel</h4>
+                <p>This is the view of a negative panel. Use it when wanting to provide a type of warning information
+                    <br>div class="panel negative"
+                </p>
+            </div>
+        </div>
+
+
+        <div id="messages" class="panel neutral">
+            <h4>Messages</h4>
+            <p>This shows what two types of messages could look like. Alter the class to alternate and make your own
+                color schemes. Default is error / warning</p>
+            <div class="msg error">Error: Saving to database failed.</div>
+            <div class="msg warning">Warning: Filename is not chosen.</div>
+        </div>
+
+
+        <div id="tables" class="panel neutral">
+            <h4>Table single row</h4>
+            <p>This just shows a table, single row. Hover over table data is active.</p>
+            <table>
+                <tr>
+                    <th>Column Data</th>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+                <tr>
+                    <td>Rad</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="panel neutral">
+            <h4>Multiple rows</h4>
+            <p>This just shows a multiple column, row, table. Hover over data is active.</p>
+            <table class="tiger">
+                <tr>
+                    <th>Namn</th>
+                    <th>Adress</th>
+                    <th>Postnummer</th>
+                    <th>Postort</th>
+                </tr>
+                <tr>
+                    <td>Erik Persson</td>
+                    <td>Morgonstigen 6</td>
+                    <td>90356</td>
+                    <td>Umeå</td>
+                </tr>
+                <tr>
+                    <td>Henrik Håkansson</td>
+                    <td>Daggmasken 8</td>
+                    <td>90199</td>
+                    <td>Sävar</td>
+                </tr>
+                <tr>
+                    <td>Sara Lundqvist</td>
+                    <td>Flottargatan</td>
+                    <td>90160</td>
+                    <td>Umeå</td>
+                </tr>
+                <tr>
+                    <td>Tobias Ledin</td>
+                    <td>KungensHus 11</td>
+                    <td>88756</td>
+                    <td>Stockholm</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="indicator" class="panel neutral">
+            <h4>Load Indicator</h4>
+            <p>This shows what a loading indicator could look like.</p>
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+
+        <div id="form" class="panel neutral">
+            <h4>Form</h4>
+            <p>This shows what a form could look like.</p>
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your name">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="sweden">Sweden</option>
+                    <option value="usa">USA</option>
+                    <option value="philippines">Philippines</option>
+                </select>
+
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>This is a style guide for waara.net (c) 2023</p>
+    </footer>
+</body>
+
+</html>
